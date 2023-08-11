@@ -19,7 +19,7 @@ This [Playbook](examples/ping.yml) will asserts that 4 packets have been receive
 ```yaml
 install:
   inetutils-ping:
-  - [ apt install inetutils-ping ]
+  - [ apt install -y inetutils-ping ]
 ping:
   assertStdoutContains: "4 packets received"
   run:
